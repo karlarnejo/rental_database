@@ -1,3 +1,5 @@
+package ToolsRentalDatabase.RentalDatabase;
+
 import java.awt.Color;
 import java.awt.EventQueue;
 import java.awt.event.ActionEvent;
@@ -148,11 +150,14 @@ public class AdminAddProduct extends JFrame {
 	            	directory = chooser.getSelectedFile().getAbsolutePath();
 	            	
 	            	if (directory.equals(System.getProperty("user.dir")
-	            			.concat("\\Pictures\\Rental Videos and Games\\Movies\\")
+	            			.concat("\\Pictures\\Movies\\")
 	            			.concat(MovieName.getText()))) {
 	            		
-	            		globalMovieDirectory = "\\\\Pictures\\\\Rental Videos and Games\\\\Movies\\\\".concat(MovieName.getText());
+	            		globalMovieDirectory = "\\\\Pictures\\\\Movies\\\\".concat(MovieName.getText() + "\\\\");
 		            	MovieDirectory.setText(directory.replace("\\", "\\\\"));
+	            	}
+	            	else {
+	            		JOptionPane.showMessageDialog(MovieDir, "Pictures must be in the appropriate directory.");
 	            	}
 	            	
 	            }		
@@ -248,11 +253,14 @@ public class AdminAddProduct extends JFrame {
 	            	directory = chooser.getSelectedFile().getAbsolutePath();
 	            	
 	            	if (directory.equals(System.getProperty("user.dir")
-	            			.concat("\\Pictures\\Rental Videos and Games\\Games\\")
+	            			.concat("\\Pictures\\Games\\")
 	            			.concat(GameName.getText()))) {
 	            		
-	            		globalGameDirectory = "\\\\Pictures\\\\Rental Videos and Games\\\\Games\\\\".concat(GameName.getText());
+	            		globalGameDirectory = "\\\\Pictures\\\\Games\\\\".concat(GameName.getText() + "\\\\");
 		            	GameDirectory.setText(directory.replace("\\", "\\\\"));
+	            	}
+	            	else {
+	            		JOptionPane.showMessageDialog(GameDir, "Pictures must be in the appropriate directory.");
 	            	}
 	            	
 	            }

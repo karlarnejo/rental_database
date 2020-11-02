@@ -1,3 +1,5 @@
+package ToolsRentalDatabase.RentalDatabase;
+
 import java.awt.Color;
 import java.awt.EventQueue;
 
@@ -38,7 +40,7 @@ public class FAQGUI extends JFrame {
 		contentPane.setLayout(null);
 		
 		JLabel label_2 = new JLabel("");
-		label_2.setIcon(new ImageIcon(System.getProperty("user.dir").concat("\\Pictures\\Rental Videos and Games\\Design\\Pandora's Box\\sdftyy.jpg")));
+		label_2.setIcon(new ImageIcon(getClass().getResource("/Design/Pandora's Box/sdftyy.jpg")));
 		label_2.setBounds(0, 0, 716, 104);
 		contentPane.add(label_2);
 		

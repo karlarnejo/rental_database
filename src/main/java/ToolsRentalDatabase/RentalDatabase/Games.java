@@ -1,3 +1,5 @@
+package ToolsRentalDatabase.RentalDatabase;
+
 import java.awt.BorderLayout;
 import java.awt.Color;
 import java.awt.Dimension;
@@ -77,11 +79,11 @@ public class Games extends JFrame {
 		for (int i = 0; i < gameCounter(); i++)
 		{
 			AddingProductGameFrame frame1 = new AddingProductGameFrame(gameDescription.get(i), gameComments.get(i), gameName.get(i), usernameOfCusomter);
-			frame1.getMainPicture().setIcon(new ImageIcon(System.getProperty("user.dir").concat(moviePicturesDir.get(i)+ "\\" +gameName.get(i)+ "1.jpg")));
-			frame1.getSidePic1().setIcon(new ImageIcon(System.getProperty("user.dir").concat(moviePicturesDir.get(i)+ "\\" +gameName.get(i)+ "2.jpg")));
-			frame1.getSidePic2().setIcon(new ImageIcon(System.getProperty("user.dir").concat(moviePicturesDir.get(i)+ "\\" +gameName.get(i)+ "3.jpg")));
-			frame1.getSidePic3().setIcon(new ImageIcon(System.getProperty("user.dir").concat(moviePicturesDir.get(i)+ "\\" +gameName.get(i)+ "4.jpg")));
-			frame1.getSidePic4().setIcon(new ImageIcon(System.getProperty("user.dir").concat(moviePicturesDir.get(i)+ "\\" +gameName.get(i)+ "5.jpg")));
+			frame1.getMainPicture().setIcon(new ImageIcon(System.getProperty("user.dir").concat(moviePicturesDir.get(i) + gameName.get(i)+ "1.jpg")));
+			frame1.getSidePic1().setIcon(new ImageIcon(System.getProperty("user.dir").concat(moviePicturesDir.get(i) + gameName.get(i)+ "2.jpg")));
+			frame1.getSidePic2().setIcon(new ImageIcon(System.getProperty("user.dir").concat(moviePicturesDir.get(i) + gameName.get(i)+ "3.jpg")));
+			frame1.getSidePic3().setIcon(new ImageIcon(System.getProperty("user.dir").concat(moviePicturesDir.get(i) + gameName.get(i)+ "4.jpg")));
+			frame1.getSidePic4().setIcon(new ImageIcon(System.getProperty("user.dir").concat(moviePicturesDir.get(i) + gameName.get(i)+ "5.jpg")));
 			ampLL.add(frame1);
 		}
 		//End of Scanning database

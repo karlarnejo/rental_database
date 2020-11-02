@@ -1,3 +1,5 @@
+package ToolsRentalDatabase.RentalDatabase;
+
 import java.awt.Color;
 import java.awt.EventQueue;
 import java.awt.event.ActionEvent;
@@ -120,7 +122,7 @@ public class MainMenuRentalGUI extends JFrame {
 		
 		//header design
 		JLabel label_2 = new JLabel("");
-		label_2.setIcon(new ImageIcon(System.getProperty("user.dir").concat("\\Pictures\\Rental Videos and Games\\Design\\Pandora's Box\\sdftyy.jpg")));
+		label_2.setIcon(new ImageIcon(getClass().getResource("/Design/Pandora's Box/sdftyy.jpg")));
 		label_2.setBounds(0, 0, 716, 104);
 		contentPane.add(label_2);
 						
@@ -128,7 +130,7 @@ public class MainMenuRentalGUI extends JFrame {
 		
 		JButton AboutUs = new JButton("");
 		AboutUs.setToolTipText("About Us");
-		AboutUs.setIcon(new ImageIcon(System.getProperty("user.dir").concat("\\Pictures\\Rental Videos and Games\\Design\\Pandora's Box\\about us.jpg")));
+		AboutUs.setIcon(new ImageIcon(getClass().getResource("/Design/Pandora's Box/about us.jpg")));
 		AboutUs.setBackground(Color.WHITE);
 		AboutUs.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent arg0)
@@ -142,7 +144,7 @@ public class MainMenuRentalGUI extends JFrame {
 		
 		JButton FAQ = new JButton("");
 		FAQ.setToolTipText("FAQ");
-		FAQ.setIcon(new ImageIcon(System.getProperty("user.dir").concat("\\Pictures\\Rental Videos and Games\\Design\\Pandora's Box\\faq.jpg")));
+		FAQ.setIcon(new ImageIcon(getClass().getResource("/Design/Pandora's Box/faq.jpg")));
 		FAQ.setBackground(Color.WHITE);
 		FAQ.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e)
@@ -156,7 +158,7 @@ public class MainMenuRentalGUI extends JFrame {
 		
 		JButton LogoutButton = new JButton("");
 		LogoutButton.setToolTipText("Logout");
-		LogoutButton.setIcon(new ImageIcon(System.getProperty("user.dir").concat("\\Pictures\\Rental Videos and Games\\Design\\Pandora's Box\\log out - Copy.jpg")));
+		LogoutButton.setIcon(new ImageIcon(getClass().getResource("/Design/Pandora's Box/log out - Copy.jpg")));
 		LogoutButton.setBackground(Color.WHITE);
 		LogoutButton.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent arg0)
@@ -178,7 +180,7 @@ public class MainMenuRentalGUI extends JFrame {
 		
 		AllGames = new JButton("");
 		AllGames.setToolTipText("Games");
-		AllGames.setIcon(new ImageIcon(System.getProperty("user.dir").concat("\\Pictures\\Rental Videos and Games\\Design\\Pandora's Box\\game.jpg")));
+		AllGames.setIcon(new ImageIcon(getClass().getResource("/Design/Pandora's Box/game.jpg")));
 		AllGames.setBackground(Color.WHITE);
 		AllGames.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e)
@@ -193,7 +195,7 @@ public class MainMenuRentalGUI extends JFrame {
 		
 		AllMoviesButton = new JButton("");
 		AllMoviesButton.setToolTipText("Movies");
-		AllMoviesButton.setIcon(new ImageIcon(System.getProperty("user.dir").concat("\\Pictures\\Rental Videos and Games\\Design\\Pandora's Box\\movie.jpg")));
+		AllMoviesButton.setIcon(new ImageIcon(getClass().getResource("/Design/Pandora's Box/movie.jpg")));
 		AllMoviesButton.setBackground(Color.WHITE);
 		AllMoviesButton.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e)
@@ -208,7 +210,7 @@ public class MainMenuRentalGUI extends JFrame {
 		
 		profileBtn = new JButton("");
 		profileBtn.setToolTipText("Profile");
-		profileBtn.setIcon(new ImageIcon(System.getProperty("user.dir").concat("\\Pictures\\Rental Videos and Games\\Design\\Pandora's Box\\viewah.jpg")));
+		profileBtn.setIcon(new ImageIcon(getClass().getResource("/Design/Pandora's Box/viewah.jpg")));
 		profileBtn.setBackground(Color.WHITE);
 		profileBtn.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent arg0) {
@@ -297,7 +299,7 @@ public class MainMenuRentalGUI extends JFrame {
 		contentPane.add(btnStaffRegistration);
 		
 		JLabel label = new JLabel("");
-		label.setIcon(new ImageIcon(System.getProperty("user.dir").concat("\\Pictures\\Rental Videos and Games\\Design\\Pandora's Box\\dfsduy.jpg")));
+		label.setIcon(new ImageIcon(getClass().getResource("/Design/Pandora's Box/dfsduy.jpg")));
 		label.setBounds(-15, 129, 737, 80);
 		contentPane.add(label);
 		

@@ -1,3 +1,5 @@
+package ToolsRentalDatabase.RentalDatabase;
+
 import java.awt.EventQueue;
 
 import javax.swing.JFrame;

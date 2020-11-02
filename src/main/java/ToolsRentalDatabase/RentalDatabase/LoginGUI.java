@@ -1,3 +1,5 @@
+package ToolsRentalDatabase.RentalDatabase;
+
 import java.awt.EventQueue;
 import java.awt.Font;
 
@@ -10,6 +12,8 @@ import javax.swing.JTextField;
 import javax.swing.JButton;
 import javax.swing.JPasswordField;
 import java.awt.event.ActionListener;
+import java.io.InputStream;
+import java.nio.file.Paths;
 import java.sql.Connection;
 import java.sql.ResultSet;
 import java.sql.Statement;
@@ -44,6 +48,8 @@ public class LoginGUI extends JFrame {
 	}
 
 	public LoginGUI() {
+
+
 		setResizable(false);
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		setBounds(100, 100, 710, 700);
@@ -136,14 +142,13 @@ public class LoginGUI extends JFrame {
 		
 		//header design
 		JLabel label_2 = new JLabel("");
-		System.out.print(System.getProperty("user.dir"));
-		label_2.setIcon(new ImageIcon(System.getProperty("user.dir").concat("\\Pictures\\Rental Videos and Games\\Design\\Pandora's Box\\sdftyy.jpg")));
+		label_2.setIcon(new ImageIcon(getClass().getResource("/Design/Pandora's Box/sdftyy.jpg")));
 		label_2.setBounds(0, 0, 716, 104);
 		contentPane.add(label_2);
 		
 		//box design
 		JLabel label_3 = new JLabel("");
-		label_3.setIcon(new ImageIcon(System.getProperty("user.dir").concat("\\Pictures\\Rental Videos and Games\\Design\\Pandora's Box\\pmnbh.jpg")));
+		label_3.setIcon(new ImageIcon(getClass().getResource("/Design/Pandora's Box/pmnbh.jpg")));
 		label_3.setBounds(183, 212, 343, 275);
 		contentPane.add(label_3);
 	}

@@ -1,3 +1,5 @@
+package ToolsRentalDatabase.RentalDatabase;
+
 import java.awt.BorderLayout;
 import java.awt.Color;
 import java.awt.Dimension;
@@ -88,11 +90,11 @@ public class Movies extends JFrame {
 			
 			//Giset nako ang picture ky dili siya pwede i loop didto sa akong AddingProductMovieFrame. Para sad limpyo akong AddingProductMovieFrame
 			//as much as possible.
-			frame1.getMainPicture().setIcon(new ImageIcon(System.getProperty("user.dir").concat(moviePicturesDir.get(i)+ "\\" +movieName.get(i)+ "1.jpg")));
-			frame1.getSidePic1().setIcon(new ImageIcon(System.getProperty("user.dir").concat(moviePicturesDir.get(i)+ "\\" +movieName.get(i)+ "2.jpg")));
-			frame1.getSidePic2().setIcon(new ImageIcon(System.getProperty("user.dir").concat(moviePicturesDir.get(i)+ "\\" +movieName.get(i)+ "3.jpg")));
-			frame1.getSidePic3().setIcon(new ImageIcon(System.getProperty("user.dir").concat(moviePicturesDir.get(i)+ "\\" +movieName.get(i)+ "4.jpg")));
-			frame1.getSidePic4().setIcon(new ImageIcon(System.getProperty("user.dir").concat(moviePicturesDir.get(i)+ "\\" +movieName.get(i)+ "5.jpg")));
+			frame1.getMainPicture().setIcon(new ImageIcon(System.getProperty("user.dir").concat(moviePicturesDir.get(i) + movieName.get(i)+ "1.jpg")));
+			frame1.getSidePic1().setIcon(new ImageIcon(System.getProperty("user.dir").concat(moviePicturesDir.get(i) + movieName.get(i)+ "2.jpg")));
+			frame1.getSidePic2().setIcon(new ImageIcon(System.getProperty("user.dir").concat(moviePicturesDir.get(i) + movieName.get(i)+ "3.jpg")));
+			frame1.getSidePic3().setIcon(new ImageIcon(System.getProperty("user.dir").concat(moviePicturesDir.get(i) + movieName.get(i)+ "4.jpg")));
+			frame1.getSidePic4().setIcon(new ImageIcon(System.getProperty("user.dir").concat(moviePicturesDir.get(i) + movieName.get(i)+ "5.jpg")));
 			
 		
 			//Gamit atong instance na gihimo nako AddingProductMovieFrame nga ang ngalan kay "frame1", gi add nako sa LinkedList
